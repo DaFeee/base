@@ -54,7 +54,9 @@ public class TrainSensorTest {
 
     @Test
     public void TestAlertRelativeMargin() {
-        sensor.overrideSpeedLimit(1);
+
+        int value = (mockTC.getReferenceSpeed()/2) - 1;
+        sensor.overrideSpeedLimit(value);
         verify(mockTU, times(1)).setAlarmState(true);
     }
 
