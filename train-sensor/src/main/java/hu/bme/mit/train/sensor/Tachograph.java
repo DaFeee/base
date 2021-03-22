@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Tachograph {
 
-    public Table<Date,Integer,Integer> table;
+    private Table<Date,Integer,Integer> table;
 
     public Tachograph(Date date, int position, int reference){
         table = HashBasedTable.create();
