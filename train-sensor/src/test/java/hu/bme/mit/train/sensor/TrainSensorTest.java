@@ -19,7 +19,7 @@ public class TrainSensorTest {
 
     @Before
     public void before() {
-        sensor = new TrainSensorImpl(controller);
+        //sensor = new TrainSensorImpl(controller);
     }
 
     @Test
