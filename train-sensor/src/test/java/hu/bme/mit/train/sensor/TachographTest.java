@@ -9,7 +9,7 @@ import java.util.Date;
 
 public class TachographTest {
 
-    Tachograph tacho;
+    Tachograph tacho = new Tachograph();
 
     @Before
     public void before() {
