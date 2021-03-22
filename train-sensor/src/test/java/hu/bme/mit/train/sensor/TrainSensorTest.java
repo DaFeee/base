@@ -16,14 +16,12 @@ public class TrainSensorTest {
     TrainController mockTC;
     TrainUser mockTU;
 
-
     @Before
     public void init() {
         mockTC = mock(TrainController.class);
         mockTU = mock(TrainUser.class);
         sensor = new TrainSensorImpl(mockTC, mockTU);
     }
-
 
     @Test
     public void TestOverride() {
@@ -59,6 +57,4 @@ public class TrainSensorTest {
         sensor.overrideSpeedLimit(value);
         verify(mockTU, times(1)).setAlarmState(true);
     }
-
-
 }

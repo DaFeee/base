@@ -9,11 +9,6 @@ public class Tachograph {
 
     private Table<Date,Integer,Integer> table;
 
-    public Tachograph(Date date, int position, int reference){
-        table = HashBasedTable.create();
-        table.put(date, position, reference);
-    }
-
     public Tachograph(){
         table = HashBasedTable.create();
     }
